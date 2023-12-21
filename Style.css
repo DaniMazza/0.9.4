@@ -1,0 +1,80 @@
+body, head{
+    height: 100%;
+    background-color: black;
+}
+.container{
+    color: white;
+}
+h1{
+    margin: 0px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted white;
+    padding: 10px;
+}
+ 
+ button{
+ 
+    background-color: transparent;
+    border: none;
+ }
+ .Enviado{
+    position: relative;
+ }
+.Recebido{
+    
+    position: relative;
+    padding: 8px 20px 8px 8px;
+ }
+ .Recebido button{
+    position: absolute;
+    right: 2px;
+    top: 1px;
+ }
+ .Recebido .visualizacao{
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+ }
+.Recebido, .Enviado{
+    width: fit-content;
+    background-color: gray;
+    border-radius: 5px;
+    
+}
+.Enviado{
+    align-self: flex-end;
+    position: relative;
+    padding: 8px 20px 8px 8px;
+    
+ }
+ .Enviado button{
+    position: absolute;
+    right: 2px;
+    top: 1px;
+ }
+ .Enviado .visualizacao{
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+ }
+.mensagens{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.drop  {
+    display: none;
+}
+
+.Recebido:hover .drop, .Enviado:hover .drop {
+    display: block;
+    
+}
